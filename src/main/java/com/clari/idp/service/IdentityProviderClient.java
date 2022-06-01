@@ -28,6 +28,7 @@ public final class IdentityProviderClient {
         IdentityProviderClient.authenticate(response);
     }
 
+
     private static void authenticate(Response response) throws MarshallingException, IOException {
         ResponseMarshaller responseMarshaller = new ResponseMarshaller();
         Element el = responseMarshaller.marshall(response);
